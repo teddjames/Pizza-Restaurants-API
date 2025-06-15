@@ -7,7 +7,7 @@ app = create_app()
 app.app_context().push()
 
 db.drop_all()
- db.create_all()
+db.create_all()
 
 # Seed restaurants
 r1 = Restaurant(name="Pizza Palace", address="123 Main St")
